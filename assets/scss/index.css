@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #5e5e5e;
+  font-weight: 700;
+  font-size: 24px;
+}
+.header .userArea {
+  display: flex;
+  align-items: center;
+}
+.header .userArea .userImage {
+  width: 74px;
+  height: 74px;
+}
+.header .userArea .userImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header .userArea .userInfo .todoInfo {
+  color: #ef6161;
+}
+.header .pageTitle {
+  font-size: 64px;
+  transform: translateX(-100px);
+}
+.header a {
+  color: #b47aea;
+  transition: 0.3s ease;
+}
+.header a:hover {
+  transform: scale(1.1);
+}
+.header a:active {
+  transform: scale(0.8);
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5e5e5e;
+  font-weight: 700;
+}
+.home .title {
+  font-size: 72px;
+  margin-bottom: 15px;
+}
+.home .slogan {
+  font-size: 24px;
+  margin-bottom: 52px;
+}
+.home a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 15px;
+  background: #b47aea;
+  padding: 8px 18px;
+  transition: 0.3s ease;
+}
+.home a:hover {
+  transform: scale(1.1);
+}
+.home a:active {
+  transform: scale(0.8);
+}
+
+.todo {
+  padding: 44px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo .todoArea {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 43px;
+}
+.todo .todoArea .todoForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.todo .todoArea .todoForm .todoInp {
+  width: 580px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  padding: 12px 26px;
+  font-size: 24px;
+}
+.todo .todoArea .todoForm .createTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: #b47aea;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.todo .todoArea .todoForm .createTodo span {
+  background-color: #b47aea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.todo .todoArea .todoForm .createTodo:hover {
+  transform: scale(1.1);
+}
+.todo .todoArea .todoForm .createTodo:active {
+  transform: scale(0.8);
+}
+.todo .todoArea .todoList {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.todo .todoArea .todoList .todoItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.todo .todoArea .todoList .todoItem .edit {
+  border: none;
+  color: #b47aea;
+  font-size: 20px;
+}
+.todo .todoArea .todoList .todoItem .edit:hover {
+  opacity: 0.8;
+}
+.todo .todoArea .todoList .todoItem .edit:active {
+  opacity: 0.6;
+}
+.todo .todoArea .todoList .todoItem .removeIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+.todo .todoArea .todoList .todoItem .removeIcon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.todo .todoArea .todoList .todoItem .removeIcon:hover {
+  transform: scale(1.1);
+  border-color: #b47aea;
+}
+.todo .todoArea .todoList .todoItem .removeIcon:active {
+  transform: scale(0.8);
+}
+.todo .todoArea .todoList .todoItem .checkbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.todo .todoArea .todoList .todoItem .todoText {
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+.todo .todoArea .todoList .todoItem .todoText.done {
+  text-decoration: line-through;
+}/*# sourceMappingURL=index.css.map */

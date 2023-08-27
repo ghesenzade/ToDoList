@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/index.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <!--* ---------------------------- START HEADER ----------------------------- -->
+    <header class="header">
+      <div class="userArea">
+        <div class="userImage">
+          <img src="./assets/images/user.png" alt="user-picture" />
+        </div>
+        <div class="userInfo">
+          <h4 class="greetings">Salam Tarlan Alijanov</h4>
+          <p class="todoInfo">
+            <span class="todoCount"></span> ediləcək qalıb
+          </p>
+        </div>
+      </div>
+      <h2 class="pageTitle">Ediləcəklər</h2>
+      <a href="./index.html">Çıxış</a>
+    </header>
+    <!--* ----------------------------- END HEADER ------------------------------ -->
+    <main>
+      <!--* ------------------------- START TODO SECTION -------------------------- -->
+      <section class="todo">
+        <div class="todoArea">
+          <form class="todoForm">
+            <input
+              type="text"
+              name="todo"
+              class="todoInp"
+              placeholder="Nə etmək istəyirsiniz ?"
+            />
+            <button class="createTodo"><span>+</span> Yeni</button>
+          </form>
+          <ul class="todoList">
+            <!-- <li class="todoItem">
+              <div class="removeIcon" id="${item.id}" onclick = "removeTodo(id)">
+                  <img src="assets/images/trash.svg" alt="trash">
+              </div>
+              <input type="checkbox" name="done" id="${item.id}" class="checkbox" onchange="finishTodo(id)">
+              <input class="todoText" id= "${item.id}" value="${item.todo}" />
+              <button class="edit">Edit</button>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+      <!--* -------------------------- END TODO SECTION --------------------------- -->
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
